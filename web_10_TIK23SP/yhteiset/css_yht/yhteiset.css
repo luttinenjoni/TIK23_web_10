@@ -53,6 +53,21 @@ body {
 
 .main{
     flex: 1;
+    border: solid 3px #666;
+    margin: 10px;
+    size: ;
+    text-align: center;
+}
+
+.main h3{
+    background-color: #CDB4DB;
+    border: solid 3px #333;
+}
+
+.main p{
+    
+
+    
 }
 
 .footer {
