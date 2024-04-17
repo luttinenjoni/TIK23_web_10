@@ -55,7 +55,6 @@ body {
     flex: 1;
     border: solid 3px #666;
     margin: 10px;
-    size: ;
     text-align: center;
 }
 
@@ -64,15 +63,68 @@ body {
     border: solid 3px #333;
 }
 
-.main p{
-    
-
-    
-}
-
 .footer {
     padding: 10px;
     text-align: center;
     background-color: #FFC8DD;
     border-radius: 10px 0px;
+}
+
+/*infosivun tyyliä alhaalla*/
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    border: solid 3px #333;
+    border-radius: 10px 0px;
+    margin: 10px;
+}
+
+
+.joni {
+    padding: 10px;
+    border: solid 3px #333;
+    border-radius: 10px 0px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.mikko {
+    padding: 10px;
+    border: solid 3px #333;
+    border-radius: 10px 0px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.tommi {
+    padding: 10px;
+    border: solid 3px #333;
+    border-radius: 10px 0px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.unna {
+    padding: 10px;
+    border: solid 3px #333;
+    border-radius: 10px 0px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.ronja {
+    padding: 10px;
+    border: solid 3px #333;
+    border-radius: 10px 0px;
+    margin: 10px;
+    width: 500px;
+    height: 500px;
 }
