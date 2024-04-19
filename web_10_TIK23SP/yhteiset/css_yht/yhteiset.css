@@ -1,56 +1,39 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 150vh;
     background-color: whitesmoke;
     font-family: "Comic Sans MS", cursive;
 
 }
 
-.header, h1{
-    padding: 20px;
-    text-align: center;
+ /*Header & nav + bootstrap by Unna*/
+
+.header{
+    height: 80px;
     background-color: #CDB4DB;
-    font-family: "Comic Sans MS", cursive;
-    font-size: 40px;
+    border-bottom: 15px;
+    /*joku kuva headerii?*/
 }
 
 .navbar {
-    display: flex;
-}
-
-.navbar ul {
-    list-style-type: none;
-    width: 100%;
-    border-radius: 0px 10px;
-    padding: 10px;
     background-color: #FFC8DD;
-}
-
-.navbar li {
-    display: inline-block;
-}
-
-.navbar li a {
+    border-radius: 0px 0px 15px 15px;
     font-family: "Comic Sans MS", cursive;
-    font-size: 15px;
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    padding: 0.5em 1em;
+    text-align: center;
 }
 
-.navbar * {
-    margin: 0;
-    padding: 0;
+.navbar .nav-link {
+    border-radius: 15PX 50PX;
+    width: auto;
 }
 
-.navbar li a:hover {
+.nav-link:hover, .nav-link.active {
     background-color: #FFAFCC;
-    font-weight: bold;
     border-radius: 15PX 50PX;
 }
 
+/* main by Mikko */
 .main{
     flex: 1;
     border: solid 3px #666;
@@ -63,14 +46,15 @@ body {
     border: solid 3px #333;
 }
 
+
 .footer {
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     background-color: #FFC8DD;
     border-radius: 10px 0px;
 }
 
-/*infosivun tyyliä alhaalla*/
+/*infosivun tyyliä alhaalla by Joni*/
 
 
 .container {
