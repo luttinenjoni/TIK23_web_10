@@ -13,8 +13,11 @@ body {
     height: 80px;
     background-color: #CDB4DB;
     border-bottom: 15px;
-    /*joku kuva headerii?*/
+    background-image: url(../kuvat_yht/happy-niilo.png);
+    background-size: contain;
+    background-position: center;
 }
+
 
 .navbar {
     background-color: #FFC8DD;
@@ -31,6 +34,10 @@ body {
 .nav-link:hover, .nav-link.active {
     background-color: #FFAFCC;
     border-radius: 15PX 50PX;
+    background-image: url(../kuvat_yht/happy-niilo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 }
 
 /* main by Mikko */
