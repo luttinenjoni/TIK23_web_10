@@ -1,3 +1,7 @@
+* {
+    cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,7 +17,7 @@ body {
     height: 80px;
     background-color: #CDB4DB;
     border-bottom: 15px;
-    background-image: url(../kuvat_yht/niilo-nalle.png);
+    background-image: url(../yhteiset/kuvat_yht/niilo-nalle.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -35,7 +39,7 @@ body {
 .nav-link:hover, .nav-link.active {
     background-color: #FFAFCC;
     border-radius: 15PX 50PX;
-    background-image: url(../kuvat_yht/happy-niilo.png);
+    background-image: url(../yhteiset/kuvat_yht/happy-niilo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
