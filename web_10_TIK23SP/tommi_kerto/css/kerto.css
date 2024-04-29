@@ -66,3 +66,8 @@ body {
     background-color: #FFC8DD;
     border-radius: 10px 0px;
 }
+
+.kuva-niilo {
+    max-width: 50vw;
+    height: auto; 
+}
