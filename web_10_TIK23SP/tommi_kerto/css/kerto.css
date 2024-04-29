@@ -1,5 +1,6 @@
 * {
-    cursor: url('../kuvat_yht/happy-niilo32.png') 15 15, auto;
+    cursor: url('/web_10_TIK23SP/yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
+    
 }
 
 body {
@@ -60,7 +61,7 @@ body {
 }
 
 .footer {
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     background-color: #FFC8DD;
     border-radius: 10px 0px;
