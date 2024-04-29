@@ -124,3 +124,49 @@ body {
     width: 500px;
     height: 500px;
 }
+
+/* Etusivun css by Mikko */
+/* etusivu css */
+.tervehdys {
+    display: flex;
+    align-items: center;
+    background-color: #CDB4DB; 
+}
+
+/* etusivu containerin css */
+.etusivu-container {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin: 3%;
+}
+
+/* tekstilaatikon puolen css */
+.column-vasen {
+    flex: 2;
+    padding: 20px;
+    margin: 2%;
+}
+
+/* otsikon css */
+.column-vasen h3{
+    width: 100%;
+    border: solid 3px #333;
+    border-radius: 15px;
+    background-color: #FFC8DD;
+    padding: 3%;
+}
+
+/* kuvan puolen css */
+.column-oikea {
+    flex: 1;
+    margin: 1%;
+    align-items: center;
+}
+
+/* kuvan css */
+.kuva-niilo {
+    max-width: 50vw;
+    height: auto; 
+}
+/* Etuvisun css päättyy */
