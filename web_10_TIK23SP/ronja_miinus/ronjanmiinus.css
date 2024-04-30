@@ -51,6 +51,7 @@ body {
     border: solid 3px #666;
     margin: 10px;
     text-align: center;
+    background-color: #BDE0FE;
 }
 
 .main h3{
@@ -64,4 +65,15 @@ body {
     text-align: center;
     background-color: #FFC8DD;
     border-radius: 10px 0px;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 40%;
+    text-align: left;
+    margin-left: 75px;
+    margin-bottom: 20px;
 }
