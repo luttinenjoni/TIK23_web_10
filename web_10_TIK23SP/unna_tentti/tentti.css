@@ -66,10 +66,11 @@ body {
     min-height: 100vh;
     background-image: url(../yhteiset/kuvat_yht/niilo-nalle_cut.png);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 400px;
     background-position: calc(20%) ;
 }
 
+/*Kokeet*/
 .level1, .level2, .level3 {
     background-color: #CDB4DB;
     min-height: 100vh;
@@ -83,6 +84,7 @@ body {
     flex-direction: column;
 }
 
+/*Napit*/
 .custom-color {
     background-color: #FFAFCC;
     border-radius: 15px;
