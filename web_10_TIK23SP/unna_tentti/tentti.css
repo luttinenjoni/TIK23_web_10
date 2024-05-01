@@ -70,7 +70,7 @@ body {
     background-position: calc(20%) ;
 }
 
-.level1 {
+.level1, .level2 {
     background-color: #BDE0FE;
     min-height: 100vh;
     margin-top: 40px;
@@ -87,6 +87,15 @@ body {
     background-color: #FFAFCC;
     border-radius: 15px;
     color: #333;
+    margin-bottom: 20px;
+}
+
+.takaisin {
+    background-color: #CDB4DB;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    flex-direction: column;
 }
 
 
