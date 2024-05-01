@@ -67,40 +67,25 @@
     </section> 
 
         <!-- Exam container -->
-        <div id="exam-container" style="display: none;"></div>
+        
+        <div id="exam-container" style="display: none;">
+          <div class="row">
+            <div class="col-md-6" id="left-column"></div>
+            <div class="col-md-6" id="right-column"></div>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="checkAnswers()">Tarkista vastaukset</button>
+        <div id="score-container" style="display:none;">
+            <p id="score-summary"></p>
+        </div>
 
-    <div class="footer">
-      <p>&copy; 2024 Niilo-Nallen Matikkapeli</p>
-  </div>
-  <!--Bootstrap js-->
-  <script type="module" src="../unna_tentti/tentti.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
-
-   
-<!--
-<div id="correct-modal" class="modal">
-  <div class="modal-content">
-      <span class="close-button" onclick="closeModal('correct-modal')">&times;</span>
-      <p>Oikein! Hienoa, jatka samaan malliin!</p>
-      <img src="../yhteiset/kuvat_yht/happy-niilo.png" alt="Happy" style="width:100px;height:100px;">
-  </div>
-</div>
-
-<div id="wrong-modal" class="modal">
-  <div class="modal-content">
-      <span class="close-button" onclick="closeModal('wrong-modal')">&times;</span>
-      <p>Väärin... koita uusetaan!</p>
-      <img src="../yhteiset/kuvat_yht/sad-niilo.png" alt="Sad" style="width:100px;height:100px;">
-  </div>
-</div>
--->
     <div class="footer">
         <p>&copy; 2024 Niilo-Nallen Matikkapeli</p>
     </div>
     <!--Bootstrap js-->
     <script src="../unna_tentti/tentti.js"></script>
+
+    <!--<script src="../unna_tentti/helppokoe.js"></script> <!-- Add this line -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script>

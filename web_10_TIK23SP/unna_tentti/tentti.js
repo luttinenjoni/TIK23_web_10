@@ -1,19 +1,16 @@
-// tentti.js
-
-// Function to start the exam based on the selected difficulty
+// Funktio, alkaa vaikeustason valinnan perusteella
 function startExam(difficulty) {
-    // Hide difficulty selection screen
+    // Piilottaa vaikeustason
     document.querySelector('.level-buttons').style.display = 'none';
     document.querySelector('.main').style.display = 'none';
-    // Show exam screen
+    // Näyttää koesivun
     document.getElementById('exam-container').style.display = 'block';
 
-    // Here you can dynamically generate the exam content based on the difficulty
-    // For now, let's just show a message indicating the difficulty
+    // Kokeen vaikeustason valinta
     let examContent = '';
     switch (difficulty) {
         case 'easy':
-            examContent = '<p>This is an easy exam.</p>';
+            examContent = '<script src="../unna_tentti/helppokoe.js"></script>';
             break;
         case 'middle':
             examContent = '<p>This is a medium difficulty exam.</p>';
@@ -27,3 +24,6 @@ function startExam(difficulty) {
     }
     document.getElementById('exam-container').innerHTML = examContent;
 }
+
+
+//Koe vaikeustaso1
