@@ -70,8 +70,8 @@ body {
     background-position: calc(20%) ;
 }
 
-.level1, .level2 {
-    background-color: #BDE0FE;
+.level1, .level2, .level3 {
+    background-color: #CDB4DB;
     min-height: 100vh;
     margin-top: 40px;
     margin-bottom: 20px;
