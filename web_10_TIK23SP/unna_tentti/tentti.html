@@ -51,41 +51,28 @@
 
 
 
-
-
-
-
-    <section class="main">
-      <!--Vaikeustason valinta-->
-     <h1>Niilo-Nallen koe!</h1>
-    <p>Täällä voit testata matematiikan taitojasi, valitse itsellesi sopiva taso!</p>
-    <div class="level-buttons">
-      <button class="level-button" onclick="startExam('easy')">Helppo</button>
-      <button class="level-button" onclick="startExam('middle')">Keskivaikea</button>
-      <button class="level-button" onclick="startExam('hard')">Vaikea</button>
-  </div>
-    </section> 
-
-        <!-- Exam container -->
-        
-        <div id="exam-container" style="display: none;">
-          <div class="row">
-            <div class="col-md-6" id="left-column"></div>
-            <div class="col-md-6" id="right-column"></div>
-        </div>
-        <button class="btn btn-primary mt-3" onclick="checkAnswers()">Tarkista vastaukset</button>
-        <div id="score-container" style="display:none;">
-            <p id="score-summary"></p>
-        </div>
+          <section class="valikko">
+            <!--Vaikeustason valinta-->
+           <h1>Niilo-Nallen koe!</h1>
+          <p>Täällä voit testata matematiikan taitojasi, valitse itsellesi sopiva taso!</p>
+          <div class="level-buttons">
+              <form action="osoite">
+                  <button class="level-button" type="submit">Helppo</button>
+              </form>
+              <form action="osoite">
+                  <button class="level-button" type="submit">Keskivaikea</button>
+              </form>
+              <form action="osoite">
+                  <button class="level-button" type="submit">Vaikea</button>
+              </form>
+          </div>
+          </section> 
 
     <div class="footer">
         <p>&copy; 2024 Niilo-Nallen Matikkapeli</p>
     </div>
+    
     <!--Bootstrap js-->
-    <script src="../unna_tentti/tentti.js"></script>
-
-    <!--<script src="../unna_tentti/helppokoe.js"></script> <!-- Add this line -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script>

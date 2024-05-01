@@ -6,11 +6,11 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 150vh;
+    min-height: 100vh;
     font-family: "Comic Sans MS", cursive;
 }
 
- /*Header & nav + bootstrap by Unna*/
+ /*Header & nav + bootstrap (Unna)*/
 
 .header{
     height: 80px;
@@ -45,33 +45,31 @@ body {
 }
 
 
-.level-buttons {
-    text-align: center;
-    margin-top: 20px;
-}
-
 .level-button {
-    background-color: pink;
+    display: inline-block;
+    background-color: #A2D2FF;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    margin: 0 10px;
+    margin: 10px;
     cursor: pointer;
+    font-family: "Comic Sans MS", cursive;
 }
 
 
-/*tentti*/
-
-.main{
+.valikko{
     text-align: center;
     font-family: "Comic Sans MS", cursive;
+    flex-direction: column;
     margin: 50px;
-    min-height: 150vh;
-    font-family: "Comic Sans MS", cursive;
-    text-align: center;
+    min-height: 100vh;
+    background-image: url(../yhteiset/kuvat_yht/niilo-nalle_cut.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(20%) ;
 }
-/*Vaikeustaso 1*/
+
 
 .footer {
     padding: 8px;
