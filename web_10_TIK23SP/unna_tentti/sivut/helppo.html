@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../unna_tentti/tentti.css">
-    <title>Niilo-Nallen Tentti</title>
-    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../tentti.css">
+    <title>Niilo-Nallen helppo koe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
@@ -51,27 +50,25 @@
 
 
 
-          <section class="valikko">
+          <section class="level1">
             <!--Vaikeustason valinta-->
-           <h1>Niilo-Nallen kokeet!</h1>
+           <h1>Niilo-Nallen helppo koe!</h1>
           <p>Täällä voit testata matematiikan taitojasi, valitse itsellesi sopiva taso!</p>
-          <div class="level-buttons">
-              <form action="../unna_tentti/sivut/helppo.html">
-                  <button class="level-button" type="submit">Helppo</button>
-              </form>
-              <form action="osoite">
-                  <button class="level-button" type="submit">Keskivaikea</button>
-              </form>
-              <form action="osoite">
-                  <button class="level-button" type="submit">Vaikea</button>
-              </form>
+          <div id="exam-container" style="display: none;">
+            <div class="row">
+              <div class="col-md-6" id="left-column"></div>
+              <div class="col-md-6" id="right-column"></div>
+          </div>
+          <button class="custom-color mt-3" onclick="checkAnswers()">Tarkista vastaukset:</button>
+          <div id="score-container" style="display:none;">
+              <p id="score-summary"></p>
           </div>
           </section> 
 
     <div class="footer">
         <p>&copy; 2024 Niilo-Nallen Matikkapeli</p>
     </div>
-    
+    <script src="../js/helppo.js"></script>
     <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 

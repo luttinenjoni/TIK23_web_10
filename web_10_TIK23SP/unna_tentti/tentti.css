@@ -70,6 +70,25 @@ body {
     background-position: calc(20%) ;
 }
 
+.level1 {
+    background-color: #BDE0FE;
+    min-height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px 50px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    flex-direction: column;
+}
+
+.custom-color {
+    background-color: #FFAFCC;
+    border-radius: 15px;
+    color: #333;
+}
+
 
 .footer {
     padding: 8px;
