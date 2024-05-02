@@ -41,7 +41,7 @@ body {
 
 /* kursori */
 * {
-    cursor: url('/kuvat/happy-niilo32.png') 15 15, auto;
+    cursor: url('../kuvat_plus/happy-niilo32.png') 15 15, auto;
 }
 
 /*sivun esittely*/
