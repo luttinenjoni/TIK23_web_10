@@ -1,59 +1,62 @@
+body {
+    display: flexbox;
+    font-family: "Comic Sans MS", cursive;
+    background-color: #cdb4db !important;
+    margin: 0;
+    padding: 0;
+}
+
 * {
     cursor: url('/web_10_TIK23SP/yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
     
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: whitesmoke;
-    font-family: "Comic Sans MS", cursive;
-
+.header{
+    height: 80px;
+    background-color: #cdb4db;
+    border-bottom: 15px;
+    background-image: url(/web_10_TIK23SP/yhteiset/kuvat_yht/niilo-nalle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.header, h1{
-    padding: 20px;
-    text-align: center;
-    background-color: #CDB4DB;
-    font-family: "Comic Sans MS", cursive;
-    font-size: 40px;
-}
 
 .navbar {
-    display: flex;
-}
-
-.navbar ul {
-    list-style-type: none;
-    width: 100%;
-    border-radius: 0px 10px;
-    padding: 10px;
-    background-color: #FFC8DD;
-}
-
-.navbar li {
-    display: inline-block;
-}
-
-.navbar li a {
+    background-color: #FFC8DD ;
+    border-radius: 0px 0px 15px 15px;
     font-family: "Comic Sans MS", cursive;
-    font-size: 15px;
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    padding: 0.5em 1em;
+    text-align: center;
 }
 
-.navbar * {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li a:hover {
-    background-color: #FFAFCC;
-    font-weight: bold;
+.navbar .nav-link {
     border-radius: 15PX 50PX;
+    width: auto;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #FFAFCC;
+    border-radius: 15PX 50PX;
+    background-image: url(/web_10_TIK23SP/yhteiset/kuvat_yht/happy-niilo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+#Peli {
+    width: 50%;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+    background-color: #FFC8DD;
+    border: 2px solid;
+    box-shadow: 4px 4px 4px;
+    box-sizing: border-box;
+    line-height: 35px;
+    position: relative;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 200px;
+
 }
 
 .main{
@@ -67,7 +70,13 @@ body {
     border-radius: 10px 0px;
 }
 
+
 .kuva-niilo {
-    max-width: 50vw;
-    height: auto; 
+    max-width: 30vw;
+    height: auto;
+    position: relative;
+    top:-400px ;
+    display: flex;
 }
+
+@media (max-width:1231px) {}

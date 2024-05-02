@@ -7,6 +7,8 @@ window.onload = function(){
     displayHighscore("level1pisteet", "Helppo: ");
     displayHighscore("level2pisteet", "Keskivaikea: ");
     displayHighscore("level3pisteet", "Vaikea: ");
+    // Miinus tehtävien tulokset
+    displayHighscore("miinusTulos", "Miinus tulokset: ")
 }
 
 function displayHighscore(id, prefix) {

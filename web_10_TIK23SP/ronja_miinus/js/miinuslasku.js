@@ -1,9 +1,10 @@
+/*Funktio jolla luodaan kysymys, ja tallennetaan sen vastaus*/
 function miinusLasku(id) {
     if (id=="kys1" || id=="kys2" || id=="kys3") {
-        var numero1 = Math.floor(Math.random() * 10) + 1;
+        var numero1 = Math.floor(Math.random() * 10) + 1; /*Satunnainen numero väliltä 1-10*/
         var numero2 = Math.floor(Math.random() * 10) + 1;
     } else {
-        var numero1 = Math.floor(Math.random() * 100);
+        var numero1 = Math.floor(Math.random() * 100); /*Satunnainen numero väliltä 0-99*/
         var numero2 = Math.floor(Math.random() * 100);
     }
     var kysymys = "Paljonko on " + numero1 + " - " + numero2 + " ?";
@@ -11,14 +12,19 @@ function miinusLasku(id) {
     return numero1 - numero2;
 }
 
+/*Luodaan kysymykset*/
 var oikeaVastaus1 = miinusLasku("kys1");
 var oikeaVastaus2 = miinusLasku("kys2");
 var oikeaVastaus3 = miinusLasku("kys3");
 var oikeaVastaus4 = miinusLasku("kys4");
 var oikeaVastaus5 = miinusLasku("kys5");
 var oikeaVastaus6 = miinusLasku("kys6");
+var oikeat = 0;
+var kaikki = 0;
 
-function vastaus(vastausId, id, tulosId) {
+/*Funktio, joka tarkistaa annetun tehtävän vastauksen ja tallentaa tuloksen koosteeseen*/
+function tarkista(vastausId, id, tulosId, buttonId) {
+    document.getElementById(buttonId).style.display = "none";
     var vastaus = parseInt(document.getElementById(vastausId).value);
     var tulos = "";
 
@@ -29,20 +35,16 @@ function vastaus(vastausId, id, tulosId) {
     else if (id == "kys5") {oikeaVastaus = oikeaVastaus5;}
     else {oikeaVastaus = oikeaVastaus6;}
     
+    /*Vastauksen tarkistus*/
     if (vastaus == oikeaVastaus) {
         tulos = "Oikein! Hyvä!";
+        oikeat = oikeat + 1;
     } else {
-        tulos = "Väärin. Oikea vastaus oli " + oikeaVastaus + ". Yritä uudelleen.";
+        tulos = "Väärin. Oikea vastaus oli " + oikeaVastaus + ".";
     }
 
+    kaikki = kaikki + 1;
+    document.getElementById("arvosana").textContent = "Oikeat vastaukset: " + oikeat + "/" + kaikki;
     document.getElementById(tulosId).textContent = tulos;
-
-    if (id == "kys1") {oikeaVastaus1 = miinusLasku(id);}
-    else if (id == "kys2") {oikeaVastaus2 = miinusLasku(id);}
-    else if (id == "kys3") {oikeaVastaus3 = miinusLasku(id);}
-    else if (id == "kys4") {oikeaVastaus4 = miinusLasku(id);}
-    else if (id == "kys5") {oikeaVastaus5 = miinusLasku(id);}
-    else {oikeaVastaus6 = miinusLasku(id);}
-
-    document.getElementById(vastausId).value = "";
+    localStorage.setItem("miinusTulos",oikeat + "/" + kaikki); /*Tuloksen tallennus koosteeseen*/
 }
