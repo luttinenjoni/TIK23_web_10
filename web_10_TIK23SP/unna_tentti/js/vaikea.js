@@ -128,6 +128,6 @@ function checkAnswers() {
         performanceMessage = "Mahtavaa työtä! Kaikki oikein!";
     }
 
-    scoreSummary.textContent = `Sait ${correctCount} oikein ${totalQuestions}:stä! ${performanceMessage}`;
+    scoreSummary.textContent = `Sait ${correctCount} pistettä ${totalQuestions} pisteestä! ${performanceMessage}`;
     scoreContainer.style.display = 'block';
 }
