@@ -7,6 +7,7 @@ window.onload = function(){
     displayHighscore("highscore1", "Helppo: ");
     displayHighscore("highscore2", "Keskitaso: ");
     displayHighscore("highscore3", "Vaikea: ");
+    displayHighscore("miinusTulos", "Miinus tulokset: ")
 }
 
 function displayHighscore(id, prefix) {

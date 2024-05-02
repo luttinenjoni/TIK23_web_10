@@ -52,36 +52,37 @@
         <div class="tervehdys">
             <h3>TERVETULOA NIILO-NALLEN VÄHENNYSLASKUJEN PARIIN!</h3>
             <p>Tällä sivulla tulet pohtimaan erilaisia miinuslaskuja!</p>
+            <p id="arvosana">Oikeat vastaukset: 0/0</p>
             <div class="row">
               <div class="column">
                 <p id="kys1">Kysymys 1</p>
                 <input type="number" id="vastaus1">
-                <button class="button" onclick="vastaus('vastaus1', 'kys1', 'tulos1')">Vastaus</button>
+                <button class="button" id="button1" onclick="tarkista('vastaus1', 'kys1', 'tulos1', 'button1')">Vastaus</button>
                 <p id="tulos1"></p>
                 <br>
                 <p id="kys2">Kysymys 2</p>
                 <input type="number" id="vastaus2">
-                <button class="button" onclick="vastaus('vastaus2', 'kys2', 'tulos2')">Vastaus</button>
+                <button class="button" id="button2" onclick="tarkista('vastaus2', 'kys2', 'tulos2', 'button2')">Vastaus</button>
                 <p id="tulos2"></p>
                 <br>
                 <p id="kys3">Kysymys 3</p>
                 <input type="number" id="vastaus3">
-                <button class="button" onclick="vastaus('vastaus3', 'kys3', 'tulos3')">Vastaus</button>
+                <button class="button" id="button3" onclick="tarkista('vastaus3', 'kys3', 'tulos3', 'button3')">Vastaus</button>
                 <p id="tulos3"></p>
                 <br>
                 <p id="kys4">Kysymys 4</p>
                 <input type="number" id="vastaus4">
-                <button class="button" onclick="vastaus('vastaus4', 'kys4', 'tulos4')">Vastaus</button>
+                <button class="button" id="button4" onclick="tarkista('vastaus4', 'kys4', 'tulos4', 'button4')">Vastaus</button>
                 <p id="tulos4"></p>
                 <br>
                 <p id="kys5">Kysymys 5</p>
                 <input type="number" id="vastaus5">
-                <button class="button" onclick="vastaus('vastaus5', 'kys5', 'tulos5')">Vastaus</button>
+                <button class="button" id="button5" onclick="tarkista('vastaus5', 'kys5', 'tulos5', 'button5')">Vastaus</button>
                 <p id="tulos5"></p>
                 <br>
                 <p id="kys6">Kysymys 6</p>
                 <input type="number" id="vastaus6">
-                <button class="button" onclick="vastaus('vastaus6', 'kys6', 'tulos6')">Vastaus</button>
+                <button class="button" id="button6" onclick="tarkista('vastaus6', 'kys6', 'tulos6', 'button6')">Vastaus</button>
                 <p id="tulos6"></p>
                 <br>
               </div>
