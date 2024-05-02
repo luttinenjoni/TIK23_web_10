@@ -1,10 +1,5 @@
-* {
-    cursor: url('/web_10_TIK23SP/yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
-    
-}
-
 body {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     min-height: 100vh;
     background-color: #CDB4DB;
@@ -12,9 +7,14 @@ body {
 
 }
 
+* {
+    cursor: url('/web_10_TIK23SP/yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
+    
+}
+
 .header{
     height: 80px;
-    background-color: #CDB4DB;
+    background-color: #cdb4db;
     border-bottom: 15px;
     background-image: url(/web_10_TIK23SP/yhteiset/kuvat_yht/niilo-nalle.png);
     background-repeat: no-repeat;
@@ -44,13 +44,16 @@ body {
     background-position: left;
 }
 
-.Peli {
+#Peli {
     font-family: "Comic Sans MS", cursive;
+    text-align: center;
     background-color: #CDB4DB;
-    border: 2px black;
+    border: 2px solid;
     box-sizing: border-box;
     flex: auto;
     line-height: 35px;
+    position: relative;
+    top: 80px;
 
 }
 
@@ -65,7 +68,10 @@ body {
     border-radius: 10px 0px;
 }
 
+
 .kuva-niilo {
     max-width: 30vw;
     height: auto;
+    position_: static;
+    left: 300px ;
 }
