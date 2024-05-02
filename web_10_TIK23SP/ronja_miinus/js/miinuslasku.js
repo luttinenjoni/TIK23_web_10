@@ -1,9 +1,10 @@
+/*Funktio jolla luodaan kysymys, ja tallennetaan sen vastaus*/
 function miinusLasku(id) {
     if (id=="kys1" || id=="kys2" || id=="kys3") {
-        var numero1 = Math.floor(Math.random() * 10) + 1;
+        var numero1 = Math.floor(Math.random() * 10) + 1; /*Satunnainen numero väliltä 1-10*/
         var numero2 = Math.floor(Math.random() * 10) + 1;
     } else {
-        var numero1 = Math.floor(Math.random() * 100);
+        var numero1 = Math.floor(Math.random() * 100); /*Satunnainen numero väliltä 0-99*/
         var numero2 = Math.floor(Math.random() * 100);
     }
     var kysymys = "Paljonko on " + numero1 + " - " + numero2 + " ?";
@@ -11,6 +12,7 @@ function miinusLasku(id) {
     return numero1 - numero2;
 }
 
+/*Luodaan kysymykset*/
 var oikeaVastaus1 = miinusLasku("kys1");
 var oikeaVastaus2 = miinusLasku("kys2");
 var oikeaVastaus3 = miinusLasku("kys3");
@@ -20,6 +22,7 @@ var oikeaVastaus6 = miinusLasku("kys6");
 var oikeat = 0;
 var kaikki = 0;
 
+/*Funktio, joka tarkistaa annetun tehtävän vastauksen ja tallentaa tuloksen koosteeseen*/
 function tarkista(vastausId, id, tulosId, buttonId) {
     document.getElementById(buttonId).style.display = "none";
     var vastaus = parseInt(document.getElementById(vastausId).value);
@@ -32,6 +35,7 @@ function tarkista(vastausId, id, tulosId, buttonId) {
     else if (id == "kys5") {oikeaVastaus = oikeaVastaus5;}
     else {oikeaVastaus = oikeaVastaus6;}
     
+    /*Vastauksen tarkistus*/
     if (vastaus == oikeaVastaus) {
         tulos = "Oikein! Hyvä!";
         oikeat = oikeat + 1;
@@ -42,5 +46,5 @@ function tarkista(vastausId, id, tulosId, buttonId) {
     kaikki = kaikki + 1;
     document.getElementById("arvosana").textContent = "Oikeat vastaukset: " + oikeat + "/" + kaikki;
     document.getElementById(tulosId).textContent = tulos;
-    localStorage.setItem("miinusTulos",oikeat + "/" + kaikki);
+    localStorage.setItem("miinusTulos",oikeat + "/" + kaikki); /*Tuloksen tallennus koosteeseen*/
 }
