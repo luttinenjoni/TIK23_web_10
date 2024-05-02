@@ -44,6 +44,16 @@ body {
     background-position: left;
 }
 
+.Peli {
+    font-family: "Comic Sans MS", cursive;
+    background-color: #CDB4DB;
+    border: 2px black;
+    box-sizing: border-box;
+    flex: auto;
+    line-height: 35px;
+
+}
+
 .main{
     flex: 1;
 }
@@ -56,6 +66,6 @@ body {
 }
 
 .kuva-niilo {
-    max-width: 50vw;
-    height: auto; 
+    max-width: 30vw;
+    height: auto;
 }
