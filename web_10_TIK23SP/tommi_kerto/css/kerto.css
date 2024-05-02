@@ -1,10 +1,9 @@
 body {
     display: flexbox;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #CDB4DB;
     font-family: "Comic Sans MS", cursive;
-
+    background-color: #cdb4db !important;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -24,7 +23,7 @@ body {
 
 
 .navbar {
-    background-color: #FFC8DD;
+    background-color: #FFC8DD ;
     border-radius: 0px 0px 15px 15px;
     font-family: "Comic Sans MS", cursive;
     text-align: center;
@@ -45,15 +44,18 @@ body {
 }
 
 #Peli {
+    width: 50%;
     font-family: "Comic Sans MS", cursive;
     text-align: center;
-    background-color: #CDB4DB;
+    background-color: #FFC8DD;
     border: 2px solid;
+    box-shadow: 4px 4px 4px;
     box-sizing: border-box;
-    flex: auto;
     line-height: 35px;
     position: relative;
-    top: 80px;
+    border-radius: 20px;
+    margin-left: 500px;
+    margin-top: 200px;
 
 }
 
@@ -72,6 +74,9 @@ body {
 .kuva-niilo {
     max-width: 30vw;
     height: auto;
-    position_: static;
-    left: 300px ;
+    position: relative;
+    top:-400px ;
+    display: flex;
 }
+
+@media (max-width:1231px) {}
