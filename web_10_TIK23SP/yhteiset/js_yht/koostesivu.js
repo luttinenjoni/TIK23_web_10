@@ -1,12 +1,12 @@
-
-
-
-
 /* yhteenlaskupelin highscore koostesivulle */
 window.onload = function(){
     displayHighscore("highscore1", "Helppo: ");
     displayHighscore("highscore2", "Keskitaso: ");
     displayHighscore("highscore3", "Vaikea: ");
+    // Tenttien tulokset
+    displayHighscore("level1pisteet", "Helppo: ");
+    displayHighscore("level2pisteet", "Keskivaikea: ");
+    displayHighscore("level3pisteet", "Vaikea: ");
 }
 
 function displayHighscore(id, prefix) {

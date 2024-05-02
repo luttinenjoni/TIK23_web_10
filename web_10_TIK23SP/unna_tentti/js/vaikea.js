@@ -130,4 +130,10 @@ function checkAnswers() {
 
     scoreSummary.textContent = `Sait ${correctCount} pistettä ${totalQuestions} pisteestä! ${performanceMessage}`;
     scoreContainer.style.display = 'block';
+
+    //Tarkistaa onko uusi tulos highscore, jos on niin korvaa vanhan näytettävän tuloksen sillä
+    const previousHighscore = parseInt(localStorage.getItem("level3pisteet")) || 0;
+    if (correctCount > previousHighscore) {
+        localStorage.setItem("level3pisteet", correctCount);
+    }
 }

@@ -143,4 +143,12 @@ function checkAnswers() {
 
     scoreSummary.textContent = `Sait ${correctCount} pistettä ${totalQuestions} pisteetsä! ${performanceMessage}`;
     scoreContainer.style.display = 'block';
+
+    //Tarkistaa onko uusi tulos highscore, jos on niin korvaa vanhan näytettävän tuloksen sillä
+    const previousHighscore = parseInt(localStorage.getItem("level1_highscore")) || 0;
+    if (correctCount > previousHighscore) {
+        localStorage.setItem("level1_highscore", correctCount);
+    }
 }
+
+
