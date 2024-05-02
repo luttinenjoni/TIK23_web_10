@@ -131,7 +131,7 @@ body {
 .tervehdys {
     display: flex;
     align-items: center;
-    background-color: #CDB4DB; 
+    background-color: #CDB4DB;
 }
 
 /* etusivu containerin css */
@@ -147,15 +147,20 @@ body {
     flex: 2;
     padding: 20px;
     margin: 2%;
+    font-family: "Comic Sans MS", cursive;
 }
 
 /* otsikon css */
 .column-vasen h3{
     width: 100%;
-    border: solid 3px #333;
     border-radius: 15px;
     background-color: #FFC8DD;
     padding: 3%;
+}
+
+/* tekstin css */
+.column-vasen p{
+    padding: 5px;
 }
 
 /* kuvan puolen css */

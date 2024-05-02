@@ -1,12 +1,29 @@
-const randomnro1 = getRandomInt(10)
-const randomnro2 = 2
-const kirjoitettuTulos = 
-const lasku = randomnro1 / randomnro2
+const button = document.getElementById("button")
 
-document.addEventListener
-
+// random numero generaattori
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+    var random = Math.floor(Math.random() * max + 1)
+    if (random % 2 === 0) { 
+      return random
+     }else{
+      return random +1
+  }}
 
-document.getElementById('laskut').innerHTML = kirjoitettuTulos
+  // kun sivu aukeaa tulee näkyviin randomisti generoitu jakolasku
+  var randomnro1 = getRandomInt(50);
+  var nro2 = 2;
+  document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
+
+// kun painat nappulaa määräytyy laskun vastaus ja oikea tulos
+ button.addEventListener('click', () =>
+  {
+    var vastausInput = parseInt(document.getElementById("vastaus").value)
+    var tulos = randomnro1 / nro2
+    //määrittää oliko vastaajan vastaus oikein vai väärin
+    if (vastausInput === tulos) {
+      alert("Oikein");
+  } else {
+      alert("Väärin");
+  }
+  
+});
