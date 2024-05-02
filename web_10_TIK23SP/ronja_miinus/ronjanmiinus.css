@@ -2,6 +2,10 @@
     cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
 }
 
+.button:hover {
+    cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,6 +13,30 @@ body {
     background-color: whitesmoke;
     font-family: "Comic Sans MS", cursive;
 
+}
+
+.footer {
+    padding: 8px;
+    text-align: center;
+    background-color: #FFC8DD;
+    border-radius: 10px 0px;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 40%;
+    text-align: left;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
+img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 90%;
 }
 
  /*Header & nav + bootstrap by Unna*/
@@ -52,28 +80,10 @@ body {
     margin: 10px;
     text-align: center;
     background-color: #BDE0FE;
+    font-family: "Comic Sans MS", cursive;
 }
 
 .main h3{
     background-color: #CDB4DB;
     border: solid 3px #333;
-}
-
-
-.footer {
-    padding: 8px;
-    text-align: center;
-    background-color: #FFC8DD;
-    border-radius: 10px 0px;
-}
-
-.row {
-    display: flex;
-}
-  
-.column {
-    flex: 40%;
-    text-align: left;
-    margin-left: 75px;
-    margin-bottom: 20px;
 }
