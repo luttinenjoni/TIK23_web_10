@@ -1,3 +1,6 @@
+// Alustetaan highscore
+var highscore = 0;
+
 // Funktio, joka arpoo kertolaskun ja näyttää sen käyttäjälle
 function generateQuestion() {
     var number1 = Math.floor(Math.random() * 10) + 1; // Satunnainen luku välillä 1-10
@@ -17,12 +20,24 @@ function checkAnswer() {
     
     if (userAnswer === correctAnswer) {
         resultText = "Oikein! Hyvä!";
+        // Päivitetään highscore, jos vastaus on oikein
+        highscore += 1; // Voit säätää pisteytystä tarpeesi mukaan
+        document.getElementById("highscore").textContent = "Highscore: " + highscore;
     } else {
         resultText = "Väärin. Oikea vastaus oli " + correctAnswer + ". Yritä uudelleen.";
+        // Nollataan highscore väärästä vastauksesta
+        highscore = 0;
+        document.getElementById("highscore").textContent = "Highscore: " + highscore;
     }
 
     document.getElementById("result").textContent = resultText;
 
+    // Tyhjennetään vastauskenttä
+    document.getElementById("answer").value = "";
+
     // Generoidaan uusi kertolasku seuraavaa kierrosta varten
     correctAnswer = generateQuestion();
 }
+
+
+
