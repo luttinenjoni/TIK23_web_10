@@ -6,9 +6,9 @@ let correctAnswer = 0;
 
 //highscoren tallennus
 window.onload = function(){
-    let scoreFromBrowser = localStorage.getItem("highscore");
+    let scoreFromBrowser = localStorage.getItem("highscore3");
     if (scoreFromBrowser != undefined) highScore = scoreFromBrowser; 
-    document.getElementById("highscore").innerHTML = "Paras tuloksesi: " + highScore;
+    document.getElementById("highscore3").innerHTML = "Paras tuloksesi: " + highScore;
     document.getElementById("nappi-div").disabled = true;
 }
 
@@ -91,8 +91,8 @@ function checkAnswer(buttonIndex){
     if (answer == correctAnswer) score += 1;
     document.getElementById("currentScore").innerHTML = "Tuloksesi: " + score;
     if (score > highScore) highScore = score;
-    localStorage.setItem("highscore",highScore); //highscoren tallennus!!
-    document.getElementById("highscore").innerHTML = "Paras tuloksesi: " + highScore;
+    localStorage.setItem("highscore3",highScore); //highscoren tallennus!!
+    document.getElementById("highscore3").innerHTML = "Paras tuloksesi: " + highScore;
 
     nextQuestion();
 }

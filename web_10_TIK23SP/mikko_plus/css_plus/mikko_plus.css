@@ -66,7 +66,6 @@ body {
     display: flex;
     justify-content: center; /* vaaka */
     align-items: center; /* pysty */
-
 }
 
 #taso-helppo,#taso-keskitaso,#taso-vaikea{
@@ -76,6 +75,7 @@ body {
     padding: 10px;
     border-radius: 14px;
     margin: 1.5%;
+    background-color:#FFC8DD;
 }
 
 /* tulos */
@@ -141,7 +141,7 @@ body {
 }
 
 /*paras tulos*/
-#highscore{
+#highscore1, #highscore2, #highscore3{
     text-align: center;
     font-size: 20px;
     padding: 16px
