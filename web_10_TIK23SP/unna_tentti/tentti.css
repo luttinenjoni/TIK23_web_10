@@ -47,7 +47,6 @@ body {
     background-position: left;
 }
 
-
 .level-button {
     display: inline-block;
     background-color: #A2D2FF;
@@ -60,8 +59,14 @@ body {
     cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
 }
 
-
-
+.level-button:hover,
+.level-button:focus,
+.level-button:active,
+.level-button:active {
+    background-color: #A2D2FF;
+    cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto !important;
+}
+                                                                     
 .valikko{
     text-align: center;
     font-family: "Comic Sans MS", cursive;
@@ -70,7 +75,7 @@ body {
     min-height: 100vh;
     background-image: url(../yhteiset/kuvat_yht/niilo-nalle_cut.png);
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 350px;
     background-position: calc(20%) ;
 }
 
@@ -96,12 +101,28 @@ body {
     margin-bottom: 20px;
 }
 
+.custom-color:hover,
+.custom-color:focus,
+.custom-color:active,
+.custom-color:active {
+    background-color: #A2D2FF;
+    cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto !important;
+}
+
 .takaisin {
     background-color: #CDB4DB;
     border-radius: 15px;
     text-align: center;
     font-family: "Comic Sans MS", cursive;
     flex-direction: column;
+}
+
+.takaisin:hover,
+.takaisin:focus,
+.takaisin:active,
+.takaisin:active {
+    background-color: #A2D2FF;
+    cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto !important;
 }
 
 .footer {
