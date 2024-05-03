@@ -27,3 +27,7 @@ var highscore = parseInt(localStorage.getItem("highscore"));
 // Näytä highscore HTML-elementissä
 document.getElementById("KertoTulos").textContent = "Kertolaskujen tulos: " + highscore;
 
+// Local Storage kertolaskuihin
+var Parastulos = parseInt(localStorage.getItem("maxPistemaara"));
+// Näytä highscore HTML-elementissä
+document.getElementById("jakoTulos").textContent = "Ennätysmääräsi oikeissa vastauksissa: " + Parastulos;

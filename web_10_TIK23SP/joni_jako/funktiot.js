@@ -12,7 +12,7 @@ function getRandomInt(max) {
   }}
 
 // kun sivu aukeaa tulee näkyviin randomisti generoitu jakolasku
-var randomnro1 = getRandomInt(50);
+var randomnro1 = getRandomInt(2);
 var nro2 = 2;
 document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
 
@@ -31,7 +31,13 @@ var faktat = [
 // Valitaan satunnainen indeksi faktalistan pituuden perusteella
 var randomIndex = Math.floor(Math.random() * faktat.length);
 var pistemaara = 0;
-var parasPistemaara = 0;
+
+var parasPistemaara = localStorage.getItem("maxPistemaara");
+if (parasPistemaara === null) {
+    parasPistemaara = 0;
+} else {
+    parasPistemaara = parseInt(parasPistemaara);
+}
 
 // kun painat nappulaa määräytyy laskun vastaus ja oikea tulos
  button.addEventListener('click', () => {
@@ -68,12 +74,15 @@ var parasPistemaara = 0;
     document.getElementById("pistemaara").innerHTML = "Pistemääräsi: " + pistemaara;
   }
 
+localStorage.setItem("maxPistemaara", parasPistemaara)
+
 })
 
 // Generoi uusi lasku
 function GeneroiLasku() {
   randomIndex = Math.floor(Math.random() * faktat.length);
-  randomnro1 = getRandomInt(50);
+  randomnro1 = getRandomInt(2);
   nro2 = 2;
   document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
 }
+
