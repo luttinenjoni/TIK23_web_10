@@ -177,3 +177,16 @@ body {
 }
 
 /* Kooste */
+
+.kooste-main {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    background-color: #BDE0FE;
+    border-radius: 15px;
+    margin: 20px;
+}
+ .nallukka {
+    height: 400px;
+    position: absolute;
+    margin-left: 10px;
+ }
