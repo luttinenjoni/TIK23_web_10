@@ -61,3 +61,7 @@ body {
     background-color: #FFC8DD;
     border-radius: 10px 0px;
 }
+
+div.main {
+    border: #333;
+}
