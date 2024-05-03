@@ -78,6 +78,7 @@ body {
     border: solid 3px #333;
     border-radius: 10px 0px;
     margin: 10px;
+    font-family: "Comic Sans MS", cursive;
 }
 
 
@@ -111,6 +112,7 @@ body {
 .unna {
     padding: 10px;
     border: solid 3px #333;
+    background-color: #FFAFCC;
     border-radius: 10px 0px;
     margin: 10px;
     width: 500px;
