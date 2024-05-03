@@ -113,3 +113,55 @@ body {
     background-size: contain;
     background-position: left;
 }
+
+p {
+    background-color: #CDB4DB;
+    font-family: "Comic Sans MS", cursive;
+}
+
+#laskut {
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    width: 200px;
+    border: 2px solid;
+    font-size: 50px;
+    background-color: #bde0fe;
+}
+
+div {
+    background-color: #FFC8DD;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100px; 
+    border: 1px solid; 
+    border-radius: 5px; 
+    font-size: 40px; 
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    background-color: #FFAFCC; 
+}
+
+#button {
+    margin-top: 5px;
+    width: 100px; 
+    border: 1px solid; 
+    border-radius: 5px; 
+    font-size: 25px; 
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    background-color: #bde0fe; 
+}
+
+.laskelmat {
+   
+        background-color: #CDB4DB; 
+        padding: 20px; 
+        border: 1px solid; 
+        border-radius: 20px;
+        width: 300px;
+        margin: auto;
+    
+}

@@ -12,7 +12,7 @@ function getRandomInt(max) {
   }}
 
 // kun sivu aukeaa tulee näkyviin randomisti generoitu jakolasku
-var randomnro1 = getRandomInt(2);
+var randomnro1 = getRandomInt(50);
 var nro2 = 2;
 document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
 
@@ -81,7 +81,7 @@ localStorage.setItem("maxPistemaara", parasPistemaara)
 // Generoi uusi lasku
 function GeneroiLasku() {
   randomIndex = Math.floor(Math.random() * faktat.length);
-  randomnro1 = getRandomInt(2);
+  randomnro1 = getRandomInt(50);
   nro2 = 2;
   document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
 }
