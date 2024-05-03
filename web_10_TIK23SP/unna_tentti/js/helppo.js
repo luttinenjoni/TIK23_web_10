@@ -59,17 +59,6 @@ function generateArithmeticQuestions(numberOfQuestions) {
         }
         questions.push({ question, answer, userAnswer: null });
     }
-
-    // Aseta ajastin 30 minuuttiin
-    var timeLeft = 30 * 60;
-    var timer = setInterval(function() {
-        timeLeft--;
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            alert("Aika loppui!");
-        }
-    }, 1000);
-
     return questions;
 }
 
