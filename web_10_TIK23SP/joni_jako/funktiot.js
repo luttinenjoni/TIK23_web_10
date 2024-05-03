@@ -12,7 +12,6 @@ function getRandomInt(max) {
   }}
 
 // kun sivu aukeaa tulee näkyviin randomisti generoitu jakolasku
-
 var randomnro1 = getRandomInt(50);
 var nro2 = 2;
 document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
@@ -32,12 +31,13 @@ var faktat = [
 // Valitaan satunnainen indeksi faktalistan pituuden perusteella
 var randomIndex = Math.floor(Math.random() * faktat.length);
 var pistemaara = 0;
+var parasPistemaara = 0;
+
 // kun painat nappulaa määräytyy laskun vastaus ja oikea tulos
  button.addEventListener('click', () => {
     var vastausInput = parseInt(document.getElementById("vastaus").value)
     var tulos = randomnro1 / nro2
 
-     // Tarkista, onko pistemäärä nollattu vai ei
      if (isNaN(pistemaara)) {
       pistemaara = 0; // Jos se on NaN, alusta se nollaksi
   }
@@ -45,20 +45,34 @@ var pistemaara = 0;
     // määrittää oliko vastaajan vastaus oikein vai väärin
     if (vastausInput === tulos) {
     document.getElementById("OikeinVaarin").innerHTML = "Vastasit oikein tässä outo fakta: " + faktat[randomIndex]
-    // lisätään pistemäärä
-    pistemaara += 1
-    document.getElementById("pistemaara").innerHTML = "Pistemääräsi: " + pistemaara
-    GeneroiLasku()
-  } else {
     
+    // lisätään pistemäärä
+    pistemaara += 1;
+    if (pistemaara > parasPistemaara) parasPistemaara = pistemaara;
+    document.getElementById("pistemaara").innerHTML = "Pistemääräsi: " + pistemaara
+    document.getElementById("maxPistemaara").innerHTML = "Paras pistemäärä: " + parasPistemaara;
+    
+
+    GeneroiLasku()
+
+       // Jos nykyinen pistemäärä on suurempi kuin paras, päivitetään paras pistemäärä
+       if (pistemaara > parasPistemaara) {
+        parasPistemaara = pistemaara;
+        // Päivitetään paras pistemäärä HTML:ään
+        localStorage.setItem("maxPistemaara").innerHTML = "Paras pistemäärä: " + parasPistemaara;
+    }
+
+  } else {
     document.getElementById("OikeinVaarin").innerHTML = "Vastauksesi oli valitettavasti väärin... Yritä uudestaan!"
+    pistemaara = 0;
+    document.getElementById("pistemaara").innerHTML = "Pistemääräsi: " + pistemaara;
   }
 
-  
 })
 
 // Generoi uusi lasku
 function GeneroiLasku() {
+  randomIndex = Math.floor(Math.random() * faktat.length);
   randomnro1 = getRandomInt(50);
   nro2 = 2;
   document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
