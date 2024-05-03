@@ -54,6 +54,8 @@ body {
     text-align: center;
     border-radius: 14px;
     background-color: #FFC8DD;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #esittely img{
@@ -88,10 +90,14 @@ body {
 /* lauseke */
 #lauseke{
     text-align: center;
-    font-size: 1em;
+    font-size: 20px;
     padding: 10px;
     background-color: #FFC8DD;
+    border: solid 4px #CDB4DB ;
     border-radius: 10px;
+    font-weight: bold;
+    
+
 }
 
 /* vastausnapit */
@@ -138,6 +144,7 @@ body {
     font-size: 22px;
     padding: 5px;
     background-color: #FFC8DD;
+    font-weight: bold;
 }
 
 /*paras tulos*/
