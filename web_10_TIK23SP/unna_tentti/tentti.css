@@ -49,7 +49,7 @@ body {
 
 .level-button {
     display: inline-block;
-    background-color: #A2D2FF;
+    background-color: #CDB4DB;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -63,7 +63,7 @@ body {
 .level-button:focus,
 .level-button:active,
 .level-button:active {
-    background-color: #A2D2FF;
+    background-color: #CDB4DB;
     cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto !important;
 }
                                                                      
@@ -71,17 +71,19 @@ body {
     text-align: center;
     font-family: "Comic Sans MS", cursive;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 80px;
     min-height: 100vh;
     background-image: url(../yhteiset/kuvat_yht/niilo-nalle_cut.png);
     background-repeat: no-repeat;
     background-size: 350px;
     background-position: calc(20%) ;
+    background-color: #BDE0FE;
+    border-radius: 20px;
 }
 
 /*Kokeet*/
 .level1, .level2, .level3 {
-    background-color: #CDB4DB;
+    background-color: #BDE0FE;
     min-height: 100vh;
     margin-top: 40px;
     margin-bottom: 20px;
