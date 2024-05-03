@@ -56,14 +56,10 @@ body {
     border: none;
     border-radius: 5px;
     margin: 10px;
-    cursor: pointer;
     font-family: "Comic Sans MS", cursive;
     cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
 }
 
-/*.level-button:hover * {
-    cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
-}*/
 
 
 .valikko{
@@ -76,7 +72,6 @@ body {
     background-repeat: no-repeat;
     background-size: 400px;
     background-position: calc(20%) ;
-    /*cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;*/
 }
 
 /*Kokeet*/
@@ -107,9 +102,7 @@ body {
     text-align: center;
     font-family: "Comic Sans MS", cursive;
     flex-direction: column;
-    /*cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;*/
 }
-
 
 .footer {
     padding: 8px;
