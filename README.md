@@ -16,3 +16,7 @@ Ryhmä 10 sprinttien retrospektiivit:
 
 Ryhmä 10 UI-suunnitelma:
 [UI-suunnitelmaRyhmä10TIK23SP_26.3.2024.pdf](https://github.com/luttinenjoni/TIK23_web_10/files/15198219/UI-suunnitelmaRyhma10TIK23SP_26.3.2024.pdf)
+
+Lähteet:
+[Lähteet_ryhmä10.pdf](https://github.com/luttinenjoni/TIK23_web_10/files/15198659/Lahteet_ryhma10.pdf)
+
