@@ -93,11 +93,9 @@ body {
     font-size: 20px;
     padding: 10px;
     background-color: #FFC8DD;
-    border: solid 4px #CDB4DB ;
+    border-bottom: solid 4px #CDB4DB;
     border-radius: 10px;
     font-weight: bold;
-    
-
 }
 
 /* vastausnapit */
