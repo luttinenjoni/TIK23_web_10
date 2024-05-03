@@ -47,7 +47,6 @@ body {
     background-position: left;
 }
 
-
 .level-button {
     display: inline-block;
     background-color: #A2D2FF;
@@ -59,9 +58,7 @@ body {
     font-family: "Comic Sans MS", cursive;
     cursor: url('../yhteiset/kuvat_yht/happy-niilo32.png') 15 15, auto;
 }
-
-
-
+                                                                     
 .valikko{
     text-align: center;
     font-family: "Comic Sans MS", cursive;
