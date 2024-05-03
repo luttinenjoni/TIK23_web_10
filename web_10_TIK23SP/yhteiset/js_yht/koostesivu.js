@@ -21,3 +21,9 @@ function displayHighscore(id, prefix) {
         highScoreElement.innerHTML = prefix + "0";
     }
 }
+
+// Local Storage kertolaskuihin
+var highscore = parseInt(localStorage.getItem("highscore"));
+// Näytä highscore HTML-elementissä
+document.getElementById("KertoTulos").textContent = "Kertolaskujen tulos: " + highscore;
+
