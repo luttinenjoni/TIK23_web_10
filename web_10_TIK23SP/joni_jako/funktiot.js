@@ -17,13 +17,6 @@ var randomnro1 = getRandomInt(50);
 var nro2 = 2;
 document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
 
-// tehdään funktio ylemmästä koodista, ettei sitä tarvitse kopioida
-function GeneroiLasku() {
-  var randomnro1 = getRandomInt(50);
-  var nro2 = 2;
-  document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
- }
-
 // Lista faktoista
 var faktat = [
   "Jotkut kilpikonnat kykenevät havaitsemaan maapallon magneettikentän ja käyttämään sitä navigoidessaan pitkillä vaelluksillaan. Tämä on erityisen hyödyllistä niille, jotka vaeltavat merellä.",
@@ -38,26 +31,35 @@ var faktat = [
 
 // Valitaan satunnainen indeksi faktalistan pituuden perusteella
 var randomIndex = Math.floor(Math.random() * faktat.length);
-
+var pistemaara = 0;
 // kun painat nappulaa määräytyy laskun vastaus ja oikea tulos
- button.addEventListener('click', () =>
-  {
+ button.addEventListener('click', () => {
     var vastausInput = parseInt(document.getElementById("vastaus").value)
     var tulos = randomnro1 / nro2
+
+     // Tarkista, onko pistemäärä nollattu vai ei
+     if (isNaN(pistemaara)) {
+      pistemaara = 0; // Jos se on NaN, alusta se nollaksi
+  }
 
     // määrittää oliko vastaajan vastaus oikein vai väärin
     if (vastausInput === tulos) {
     document.getElementById("OikeinVaarin").innerHTML = "Vastasit oikein tässä outo fakta: " + faktat[randomIndex]
     // lisätään pistemäärä
-    var pistemaara = parseInt(document.getElementById("pistemaara").innerHTML)
-    pistemaara = 0
     pistemaara += 1
     document.getElementById("pistemaara").innerHTML = "Pistemääräsi: " + pistemaara
-
-
+    GeneroiLasku()
   } else {
+    
     document.getElementById("OikeinVaarin").innerHTML = "Vastauksesi oli valitettavasti väärin... Yritä uudestaan!"
   }
 
-  GeneroiLasku()
+  
 })
+
+// Generoi uusi lasku
+function GeneroiLasku() {
+  randomnro1 = getRandomInt(50);
+  nro2 = 2;
+  document.getElementById('laskut').innerHTML = randomnro1 + " / " + nro2;
+}
