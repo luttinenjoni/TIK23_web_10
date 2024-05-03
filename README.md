@@ -10,3 +10,6 @@ https://app.hacknplan.com/p/202069/kanban?categoryId=0&boardId=555240
 
 Discord:
 https://discord.gg/Y7CyANHmZ7
+
+Ryhmä 10 sprinttien retrospektiivit:
+[SprinttienRetrospektiivi_Ryhmä10_TIK23SP.pdf](https://github.com/luttinenjoni/TIK23_web_10/files/15197927/SprinttienRetrospektiivi_Ryhma10_TIK23SP.pdf)

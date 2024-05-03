@@ -44,6 +44,8 @@ body {
     cursor: url('../kuvat_plus/happy-niilo32.png') 15 15, auto;
 }
 
+
+
 /*sivun esittely*/
 #esittely{
     display: flex;
@@ -78,6 +80,12 @@ body {
     border-radius: 14px;
     margin: 1.5%;
     background-color:#FFC8DD;
+    cursor: url(../kuvat_plus/happy-niilo32.png) 15 15, auto !important
+}
+
+#vaikeustaso button:hover{
+    font-weight: bold;
+    background-color: #FFAFCC
 }
 
 /* tulos */
@@ -93,11 +101,9 @@ body {
     font-size: 20px;
     padding: 10px;
     background-color: #FFC8DD;
-    border: solid 4px #CDB4DB ;
+    border-bottom: solid 4px #CDB4DB;
     border-radius: 10px;
     font-weight: bold;
-    
-
 }
 
 /* vastausnapit */
@@ -108,9 +114,16 @@ body {
     background-color: #FFC8DD;
 }
 
+#nappi-div button:hover {
+    font-weight: bold;
+    background-color: #FFC8DD
+  }
+
 #btn1,#btn2,#btn3,#btn4{
     width: 97.4px;
     height: 66.1px;
+    cursor: url(../kuvat_plus/happy-niilo32.png) 15 15, auto !important
+
 }
 
 #btn1 img,#btn2 img,#btn3 img,#btn4 img{
@@ -122,6 +135,12 @@ body {
 #pelaa-nappi{
     text-align: center;
     margin: 1%;
+    cursor: url(../kuvat_plus/happy-niilo32.png) 15 15, auto !important
+}
+
+#pelaa-nappi button:hover{
+    font-weight: bold;
+    background-color: #FFAFCC
 }
 
 #startBtn{
@@ -130,6 +149,8 @@ body {
     font-size: 30px;
     border-radius: 14px;
     background-color: #FFC8DD;
+    cursor: url(../kuvat_plus/happy-niilo32.png) 15 15, auto !important
+
 }
 
 /* pelin aloitus ohje */
