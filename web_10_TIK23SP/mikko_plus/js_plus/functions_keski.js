@@ -1,4 +1,4 @@
-let timeLeft = 10; // ajan asetus 1/3
+let timeLeft = 30; // ajan asetus 1/3
 let timerInterval
 let score = 0;
 let highScore = 0;
@@ -48,7 +48,7 @@ function restartGame() {
     clearInterval(timerInterval); //timerIntervallin pysäytys
     
     // muuttujien nollaus
-        timeLeft = 10 //ajan asetus 2/3
+        timeLeft = 30; //ajan asetus 2/3
         score = 0;
         document.getElementById("currentScore").innerHTML = "Tuloksesi: " + score;
 
@@ -88,7 +88,18 @@ function nextQuestion(){
 //scoren ja high scoren päivitys ja lisäys (myös tallennus)
 function checkAnswer(buttonIndex){
     let answer = document.getElementById("btn" + buttonIndex).innerHTML;
-    if (answer == correctAnswer) score += 1;
+    let palauteteksti = document.getElementById("palauteteksti");
+
+    /* ilmoittaa, onko vastaus oikein vai väärin */
+    if (answer == correctAnswer){
+        score += 1;
+        palauteteksti.innerHTML = "Oikein!";
+        palauteteksti.style.color = "green";
+    }else{
+        palauteteksti.innerHTML = "Väärin, oikea vastaus oli: " + correctAnswer;
+        palauteteksti.style.color = "red";
+    }
+
     document.getElementById("currentScore").innerHTML = "Tuloksesi: " + score;
     if (score > highScore) highScore = score;
     localStorage.setItem("highscore2",highScore); //highscoren tallennus!!
@@ -96,5 +107,3 @@ function checkAnswer(buttonIndex){
 
     nextQuestion();
 }
-
-
