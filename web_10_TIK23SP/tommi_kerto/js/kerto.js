@@ -17,17 +17,17 @@ var correctAnswer = generateQuestion(); // Haetaan oikea vastaus
 function checkAnswer() {
     var userAnswer = parseInt(document.getElementById("answer").value);
     var resultText = "";
+    localStorage.setItem("highscore",highscore); //highscoren tallennus!!
     
     if (userAnswer === correctAnswer) {
         resultText = "Oikein! Hyvä!";
         // Päivitetään highscore, jos vastaus on oikein
         highscore += 1; // Voit säätää pisteytystä tarpeesi mukaan
-        document.getElementById("highscore").textContent = "Highscore: " + highscore;
+        document.getElementById("highscore").textContent = "Hienoa! Olet vastannut näin moneen kysymykseen oikein: " + highscore;
     } else {
         resultText = "Väärin. Oikea vastaus oli " + correctAnswer + ". Yritä uudelleen.";
         // Nollataan highscore väärästä vastauksesta
-        highscore = 0;
-        document.getElementById("highscore").textContent = "Highscore: " + highscore;
+        
     }
 
     document.getElementById("result").textContent = resultText;
@@ -38,6 +38,30 @@ function checkAnswer() {
     // Generoidaan uusi kertolasku seuraavaa kierrosta varten
     correctAnswer = generateQuestion();
 }
+
+//highscoren tallennus
+window.onload = function(){
+    let scoreFromBrowser = localStorage.getItem("highscore");
+    if (scoreFromBrowser != undefined) highscore = scoreFromBrowser; 
+    document.getElementById("highscore").innerHTML = "Paras tuloksesi: " + highscore;
+    document.getElementById("nappi-div").disabled = true;
+}
+
+window.onload = function() {
+    let scoreFromBrowser = localStorage.getItem("highscore");
+
+    // Tarkistetaan, että scoreFromBrowser on olemassa ja ei ole tyhjä merkkijono
+    if (scoreFromBrowser !== null && scoreFromBrowser !== "") {
+        highscore = parseInt(scoreFromBrowser); // Muunnetaan tallennettu arvo numeroksi
+    }
+
+    // Päivitetään näyttö tallennetulla highscorella
+    document.getElementById("highscore").innerHTML = "Hienoa! Olet vastannut näin moneen kysymykseen oikein: " + highscore;
+}
+
+
+
+
 
 
 
