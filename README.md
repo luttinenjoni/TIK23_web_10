@@ -5,6 +5,8 @@ Ronja Kursu - KuRon02 /
 Joni Luttinen - luttinenjoni /
 Tommi Määttä - n3mato01 /
 
+Linkki meidän sivustolle: https://luttinenjoni.github.io/TIK23_web_10/
+
 HacknPlan linkki:
 https://app.hacknplan.com/p/202069/kanban?categoryId=0&boardId=555240
 
